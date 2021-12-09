@@ -110,10 +110,11 @@ router.post('/email', async (req,res)=>{
  
   var transporter = nodemailer.createTransport({
     service: 'gmail',
+  
     auth: {
-      user: 'guravsamiksha17@gmail.com',
-      pass: 'Samiksha@2022'
-    }
+        user: 'your mail id',
+        pass: 'password'
+      }
   });
   
   var mailOptions = {
